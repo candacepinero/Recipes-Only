@@ -4,11 +4,12 @@ const Recipe = require('../models/recipe.js')
 const router = express.Router()
 
 //Routes
-
 //Index/Homepage
+router.get('/', (req, res) => {
+    res.send('this route is working')
+})
 
-
-//New
+//New/add new recipe
 
 //Delete
 
@@ -18,7 +19,7 @@ const router = express.Router()
 
 //Edit
 
-//Show
+//Show/view recipe
 
 
 module.exports = router;

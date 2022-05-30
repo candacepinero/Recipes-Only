@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +8,41 @@
     <link rel="stylesheet" href="/style.css">
     <title>Recipes Only</title>
 </head>
+
 <body>
     <header>
         <nav>
-           
+
             <a href="/recipes/new"><button>Create Recipe</button></a>
         </nav>
     </header>
-    <% for (let i = 0; i < recipes.length; i++) { %>
-        <h1><%=recipes[i].name%></h1>
-        
-        <div class="container-home">
-        <a href="/recipes/<%=recipes[i]._id%>"><img id="recipe-imgs" src="<%=recipes[i].img%>" alt=""></a>
-        </div>  
-        
-        <a href="/recipes/<%=recipes[i]._id%>/edit"><button>Edit Recipe</button></a>
+    <div class="container">
+        <% for (let i=0; i < recipes.length; i++) { %>
 
-        <form action="/recipes/<%=recipes[i]._id%>?_method=DELETE" method="POST">
-            <input type="submit" value="Delete Recipe">
-        </form>
-    <%}%>
-    
+
+
+            <div class="image-content">
+                <a href="/recipes/<%=recipes[i]._id%>"><img class="home-imgs" src="<%=recipes[i].img%>" alt="">
+                    <h3>
+                        <%=recipes[i].name%>
+                    </h3>
+                </a>
+                <div class="edit-btn">
+                    <a href="/recipes/<%=recipes[i]._id%>/edit"><button class="edit-btn">Edit Recipe</button></a>
+                </div>
+
+                <div class="delete-btn">
+                <form action="/recipes/<%=recipes[i]._id%>?_method=DELETE" method="POST">
+                    <input class="delete-btn" type="submit" value="Delete Recipe">
+                </form>
+            </div>
+            </div>
+
+
+
+            <%}%>
+    </div>
+
 </body>
+
 </html>

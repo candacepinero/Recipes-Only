@@ -1,0 +1,23 @@
+
+
+body {
+    background-color: aqua;
+}
+
+/* #recipe-imgs {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid rebeccapurple;
+   
+
+
+} */
+
+.container-home {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+   justify-content: center;
+    border: 2px solid rgb(153, 80, 51);
+}

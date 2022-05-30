@@ -8,23 +8,19 @@
 </head>
 <body>
     <header>
-        <h1>Create a new recipe</h1>
         <nav>
             <a href="/recipes"><button>My Recipes</button></a>
             <a href=""><button>Edit Recipe</button></a>
         </nav>
     </header>
     <main>
-        <form action="/recipes" method="POST">
-         Recipe name:   <input type="text" name="name" /><br />
-         Image:   <input type="text" name="img" /><br />
-         ingredients:  <input type="text" name="ingredients" /><br />
-         directions:  <input type="text" name="directions" /><br />
-            <input type="submit" value="Create Recipe">
-        </form>
+        <h1><%=recipes.name%></h1>
+        <img src="<%=recipes.img%>" alt="">
+        <ul>
+            <li><%=recipes.ingredients%></li>
+        </ul>
+        <p><%=recipes.directions%></p>
+    <%console.log(recipes.name)%>
     </main>
-
-
-    
 </body>
 </html>

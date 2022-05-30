@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes Only</title>
+</head>
+<body>
+    <form action="/recipes/<%=recipes._id%>?_method=PUT" method="POST">
+        Recipe name:   <input type="text" name="name" value="<%=recipes.name%>" /><br />
+        Image:   <input type="text" name="img" value="<%=recipes.img%>" /><br />
+        ingredients:  <input type="text" name="ingredients" value="<%=recipes.ingredients%>" /><br />
+        directions:  <input type="text" name="directions" value="<%=recipes.directions%>" /><br />
+           <input type="submit" value="Edit Recipe">
+    </form>
+</body>
+</html>

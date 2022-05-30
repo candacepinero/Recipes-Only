@@ -1,8 +1,8 @@
 //required dependencies 
 const express = require('express');
 const res = require('express/lib/response');
-const Recipe = require('../models/recipe.js')
-const router = express.Router()
+const Recipe = require('../models/recipe.js');
+const router = express.Router();
 
 //Routes
 //Index/Homepage
@@ -17,17 +17,22 @@ router.get('/', (req, res) => {
 //New/add new recipe
 router.get('/new', (req, res) => {
    res.render('recipes/new.ejs')
-})
+});
 
 //Delete
+router.delete('/:id', (req, res) => {
+    Recipe.findByIdAndDelete(req.params.id, () => {
+        res.redirect('/recipes')
+    });
+});
 
 //Update
 router.put('/:id', (req, res) => {
     Recipe.findByIdAndUpdate(req.params.id, req.body, () => {
       
         res.redirect('/recipes')
-    })
-})
+    });
+});
 
 //Create
 router.post('/', (req, res) => {
@@ -42,11 +47,11 @@ router.get('/:id/edit', (req, res) => {
         
         res.render('recipes/edit.ejs', {recipes: foundRecipes, 
         
-        })
+        });
         
         
-    })
-})
+    });
+});
 
 
 //Show/view recipe
@@ -54,8 +59,8 @@ router.get('/:id', (req, res) => {
     Recipe.findById(req.params.id, (err, foundRecipes) => {
        
         res.render('recipes/show.ejs', {recipes: foundRecipes
-        })
-    })
-})
+        });
+    });
+});
 
 module.exports = router;

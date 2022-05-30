@@ -39,7 +39,7 @@ router.post('/', (req, res) => {
 //Edit
 router.get('/:id/edit', (req, res) => {
     Recipe.findById(req.params.id, (err, foundRecipes) => {
-        console.log(foundRecipes)
+        
         res.render('recipes/edit.ejs', {recipes: foundRecipes, 
         
         })

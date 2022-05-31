@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
     <title>Recipes Only</title>
 </head>
+
 <body>
     <header>
-        <nav>
-            <a href="/recipes"><button>My Recipes</button></a>
-            <a href="/recipes/<%=recipes._id %>/edit"><button>Edit Recipe</button></a>
-        </nav>
+
+        <ul>
+            <li><a class="show-nav" href="/recipes">My Recipes</a></li>
+            <li><a class="show-nav" href="/recipes/<%=recipes._id %>/edit">Edit Recipe</a></li>
+        </ul>
+
     </header>
     <main>
-        <h1><%=recipes.name%></h1>
-        <img src="<%=recipes.img%>" alt="">
-        <ul>
-            <li><%=recipes.ingredients%></li>
-        </ul>
-        <p><%=recipes.directions%></p>
-    
+        <h1>
+            <%=recipes.name%>
+        </h1>
+
+        <div class="showimg-div">
+            <img class="show-img" src="<%=recipes.img%>" alt="">
+        </div>
+
+        <div>
+            <p>
+                <%=recipes.ingredients%>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                <%=recipes.directions%>
+            </p>
+        </div>
     </main>
 </body>
+
 </html>

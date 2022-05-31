@@ -1,22 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
     <title>Recipes Only</title>
 </head>
+
 <body>
-    <nav>
-        <a href="/recipes"><button>My Recipes</button></a>
-        <a href="/recipes/new"><button>Create Recipe</button></a>
-    </nav>
-    <form action="/recipes/<%=recipes._id%>?_method=PUT" method="POST">
-        Recipe name:   <input type="text" name="name" value="<%=recipes.name%>" /><br />
-        Image:   <input type="text" name="img" value="<%=recipes.img%>" /><br />
-        ingredients:  <input type="text" name="ingredients" value="<%=recipes.ingredients%>" /><br />
-        directions:  <input type="text" name="directions" value="<%=recipes.directions%>" /><br />
-           <input type="submit" value="Edit Recipe">
-    </form>
+    <ul>
+        <li><a class="edit-nav" href="/recipes">My Recipes</a></li>
+        <li><a class="edit-nav" href="/recipes/new">Create Recipe</a></li>
+    </ul>
+
+    <div class="edit-container">
+        <div class="edit-sideimg"></div>
+        <div class="edit-contaier2">
+            <form action="/recipes/<%=recipes._id%>?_method=PUT" method="POST">
+                <fieldset class="recipe-info">
+                    <!-- recipes name -->
+                    <label for="name">Recipe Name</label>
+                    <input type="text" name="name" value="<%=recipes.name%>" /><br />
+                    <!-- recipes image -->
+                    <label for="img">Image</label>
+                    <input type="text" name="img" value="<%=recipes.img%>" /><br />
+                </fieldset>
+                <!-- recipe directions -->
+                <fieldset>
+                    <label for="ingredients">Ingredients</label>
+                    <textarea type="text" name="ingredients" value="<%=recipes.ingredients%>"></textarea>
+                    <label for="directions">Directions</label>
+                    <textarea type="text" name="directions" value="<%=recipes.directions%>"></textarea> 
+                </fieldset>
+                <input type="submit" value="Edit Recipe">
+            </form>
+        </div>
+    </div>
 </body>
+
+
 </html>

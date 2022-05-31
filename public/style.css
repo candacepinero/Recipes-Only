@@ -119,6 +119,7 @@ h1 {
 
 .show-img {
  width: 400px;
+
  
 }
 
@@ -137,3 +138,61 @@ h2 {
     
 }
 
+/* create page */
+
+.new-container {
+    width: 80vw;
+    height: 70vw;
+    margin: 50px auto;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #654069,
+                -1px -1px 10px #45ad99,
+                1px -1px 10px #fc8b01,
+                -1px 1px 10px #f6ffff;
+}
+
+.side-img {
+    width: 50%;
+    
+    background-image: url('https://i.imgur.com/ZsvmJav.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 0 0 10px;
+}
+
+.container2 {
+    width: 50%;
+    background: #fc8b01;
+    border-radius: 0 10px 10px 0;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+fieldset {
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+legend {
+    padding: 0px 10px;
+    font-weight: 500;
+
+}
+
+label {
+    font-weight: 200;
+    display: block;
+}
+
+input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid red;
+    border-radius: 5px;
+}

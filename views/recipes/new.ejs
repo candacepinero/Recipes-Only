@@ -11,10 +11,10 @@
 
 <body>
     <header>
-        <nav>
-            <a href="/recipes"><button>My Recipes</button></a>
+       <ul>
+           <li><a class="new-nav" href="/recipes">My Recipes</a></li>
 
-        </nav>
+        </ul>
     </header>
 
     <div class="new-container">
@@ -23,7 +23,7 @@
         <div class="container2">
             
         
-            <h1>Create a new recipe</h1>
+            <h1 class="new-h1">Create a new recipe</h1>
 
 
 
@@ -32,10 +32,10 @@
                 <legend>Recipe Information</legend>
                 <!-- name input -->
                 <label for="name"> Name</label>
-                <input type="text" name="name" id="name" /><br />
+                <input type="text" name="name" id="new-input" /><br />
                 <!-- image input -->
                 <label for="img">Recipe Image</label>
-                <input type="text" name="img" id="image" /><br />
+                <input type="text" name="img" id="new-input" /><br />
                 </fieldset>
                 <!-- ingredients input -->
                 <fieldset class="recipes-instructions">
@@ -46,7 +46,7 @@
                 <textarea id="directions" type="text" name="directions" placeholder="Directions"></textarea>
                 </fieldset>
                 <!-- submit button -->
-                <input type="submit" value="Create Recipe">
+                <input type="submit" value="Create Recipe" id="new-input">
             </form>
         </div>
     </div>

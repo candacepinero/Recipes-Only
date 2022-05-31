@@ -81,12 +81,12 @@ ul {
     position: fixed;
     top: 0;
     width: 100%;
-   
+
 }
 
-li  {
+li {
     display: inline;
-   float: left;
+    float: left;
 }
 
 li .show-nav {
@@ -96,7 +96,7 @@ li .show-nav {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    
+
 }
 
 li .show-nav:hover {
@@ -114,13 +114,13 @@ h1 {
 .showimg-div {
     display: flex;
     justify-content: center;
-    
+
 }
 
 .show-img {
- width: 400px;
+    width: 400px;
 
- 
+
 }
 
 .show-text {
@@ -135,26 +135,44 @@ h1 {
 h2 {
     color: #654069;
     margin-left: 450px;
-    
+
 }
 
 /* create page */
+li .new-nav {
+    display: block;
+    padding: 8px;
+
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li .new-nav:hover {
+    background-color: #654069;
+}
+
 
 .new-container {
     width: 80vw;
     height: 70vw;
     margin: 50px auto;
+    margin-top: 100px;
+
     display: flex;
+
     border-radius: 10px;
-    box-shadow: 1px 1px 10px #654069,
-                -1px -1px 10px #45ad99,
-                1px -1px 10px #fc8b01,
-                -1px 1px 10px #f6ffff;
+    box-shadow: 1px 1px 10px #19274e,
+        -1px -1px 10px #53aa9e,
+        1px -1px 10px #b18767,
+        -1px 1px 10px #e0e4e3;
 }
 
 .side-img {
-    width: 50%;
-    
+    width: 800px;
+    display: block;
+    padding: 60px;
     background-image: url('https://i.imgur.com/ZsvmJav.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -163,15 +181,19 @@ h2 {
 
 .container2 {
     width: 50%;
-    background: #fc8b01;
+    background: #b18767;
     border-radius: 0 10px 10px 0;
     padding: 15px;
     box-sizing: border-box;
     overflow: auto;
 }
 
+.new-h1 {
+    color: #19274e;
+}
+
 fieldset {
-    border: 1px solid blue;
+    border: 1px solid rgb(250, 250, 252);
     border-radius: 5px;
     padding: 20px;
     margin: 20px 0;
@@ -188,11 +210,11 @@ label {
     display: block;
 }
 
-input {
+#new-input {
     width: 100%;
     margin: 10px 0;
     padding: 10px;
     box-sizing: border-box;
-    border: 1px solid red;
+    border: 1px solid rgb(2, 2, 2);
     border-radius: 5px;
 }

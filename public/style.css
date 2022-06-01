@@ -103,10 +103,11 @@ li .show-nav:hover {
     background-color: #654069;
 }
 
-h1 {
+.show-h1 {
     display: flex;
     justify-content: center;
     margin-top: 100px;
+    margin-left: 300px;
     color: #45ad99;
 
 }
@@ -114,8 +115,9 @@ h1 {
 .showimg-div {
     display: flex;
     justify-content: center;
-    border: 2px solid olive;
-
+    
+    width: 400px;
+    margin-left: 630px;
 }
 
 .show-img {
@@ -157,7 +159,7 @@ li .new-nav:hover {
 
 .new-container {
     width: 80vw;
-    height: 70vw;
+    height: 50vw;
     margin: 50px auto;
     margin-top: 100px;
 
@@ -173,8 +175,8 @@ li .new-nav:hover {
 .side-img {
     width: 800px;
     display: block;
-    padding: 200px;
-    background-image: url('https://i.imgur.com/ZsvmJav.png');
+    padding: 100px;
+    background-image: url('https://i.imgur.com/g9uYZxT.png');
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px 0 0 10px;
@@ -248,7 +250,7 @@ label {
 
  .edit-sideimg {
     width: 50%;
-    padding: 80px;
+    padding: 100px;
     background-image: url('https://i.imgur.com/ELmbcgy.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -281,6 +283,12 @@ label {
  
 
  @media only screen and (max-width: 600px){
+    .show-h1 {
+        width: 500px;
+        margin-left: -20px;
+        
+    }
+    
     .showimg-div {
         display: flex;
         justify-content: center;
@@ -289,6 +297,7 @@ label {
     }
     .show-img {
         width: 400px;
+        margin-left: -1200px;
     }
 
     .show-text {
@@ -306,5 +315,7 @@ label {
         margin-left: -5px;
     
     }
+
+    
 
  }

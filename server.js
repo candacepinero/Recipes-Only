@@ -5,7 +5,8 @@ const methodOverride = require('method-override')
 const recipesController = require('./controllers/recipes.js')
 require('dotenv').config()
 const app = express()
-const port = 3000; 
+const PORT = process.env.PORT || 3000;
+
 
 
 //database
@@ -28,9 +29,5 @@ app.use('/recipes', recipesController);
 app.use(express.static('public'));
 
 
-
-
 //listener
-app.listen(port, () => {
-    console.log('hello on port', port)
-})
+app.listen(PORT, () => console.log('express is listening on:', PORT));

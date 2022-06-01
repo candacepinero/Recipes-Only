@@ -173,7 +173,7 @@ li .new-nav:hover {
 .side-img {
     width: 800px;
     display: block;
-    padding: 60px;
+    padding: 200px;
     background-image: url('https://i.imgur.com/ZsvmJav.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -235,6 +235,48 @@ label {
  li .edit-nav:hover {
     background-color: #654069;
  }
+
+ .edit-container {
+     width: 80vw;
+     height: 50vw;
+     margin: 50px auto;
+     margin-top: 200px;
+     display: flex;
+     border-radius: 10px;
+     box-shadow: 1px 1px 10px;
+ }
+
+ .edit-sideimg {
+    width: 50%;
+    padding: 80px;
+    background-image: url('https://i.imgur.com/ELmbcgy.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 0 0 10px;
+ }
+
+ .edit-container2 {
+    width: 50%;
+    background: #19404e;
+    border-radius: 0 10px 10px 0;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: auto;
+ }
+
+ #edit-input {
+     width: 100%;
+     margin: 10px 0;
+     padding: 10px;
+     box-sizing: border-box;
+     border: 1px solid white;
+     border-radius: 5px;
+ }
+
+
+
+
+
 
  
 

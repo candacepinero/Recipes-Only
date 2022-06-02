@@ -283,6 +283,39 @@ li .edit-nav:hover {
 
 
 @media only screen and (max-width: 600px) {
+   ul {
+        background-color: #c1524d;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    
+    }
+
+    li {
+        display: inline;
+        float: left;
+    }
+    
+    li .show-nav {
+        display: block;
+        padding: 8px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    
+    }
+    
+    li .show-nav:hover {
+        background-color: #8b5a6f;
+    }
+   
+   
+   
     /* show */
     .show-h1 {
         width: 500px;
@@ -338,7 +371,7 @@ li .edit-nav:hover {
 
     .container2 {
         width: 5000%;
-        background: #b18767;
+        background: #436f64;
         border-radius: 0 10px 10px 0;
         padding: 15px;
         box-sizing: border-box;
@@ -392,7 +425,7 @@ li .edit-nav:hover {
 
     .edit-container2 {
         width: 5000%;
-        background: #0c1163;
+        background: #436f64;
         border-radius: 0 10px 10px 0;
         padding: 15px;
         box-sizing: border-box;
@@ -401,7 +434,7 @@ li .edit-nav:hover {
     }
 
     .recipe-info {
-        border: 1px solid rgb(250, 250, 252);
+        border: 1px solid #ecbd57;
         border-radius: 5px;
         padding: 5px;
         margin: 20px 0;

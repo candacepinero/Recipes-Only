@@ -22,10 +22,12 @@ Recipes Only is a full CRUD application that allows users to create recipes. Whe
 ### Getting started
 ![WireFrame](./images/WireFrame2022-05-27%20at%203.13.25%20PM.png)
 
-[Trelloboard](https://trello.com/b/XAbHgY4n/project-2) Trello
+[Trello board](https://trello.com/b/XAbHgY4n/project-2) 
 
 [Click here to visit site](https://recipesonly.herokuapp.com/recipes) 
 
 
 
 ### Future Enhancements
+* Adding the ability for a user to create a personal account to store recipes and to keep them from being delete or edited
+* routes to other types of recipes like thai food recipes and others 

@@ -416,8 +416,7 @@ li .edit-nav:hover {
 }
 
 
-
-/* large phone screen */
+/*  screen */
 @media only screen and (max-width: 600px) {
    ul {
         background-color: #c1524d;
@@ -468,7 +467,7 @@ li .edit-nav:hover {
 
     .show-img {
         width: 400px;
-        margin-left: -1200px;
+        margin-left: -350px;
     }
 
     .show-text {

@@ -24,7 +24,7 @@ Recipes Only is a full CRUD application that allows users to create recipes. Whe
 
 [Trelloboard](https://trello.com/b/XAbHgY4n/project-2) Trello
 
-[sitelink](https://recipesonly.herokuapp.com/recipes) click here to visit site
+[Click here to visit site](https://recipesonly.herokuapp.com/recipes) 
 
 
 

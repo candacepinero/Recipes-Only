@@ -30,10 +30,11 @@
                 </fieldset>
                 <!-- recipe directions -->
                 <fieldset>
+                    <%console.log(recipes.ingredients)%>
                     <label for="ingredients">Ingredients</label>
-                    <textarea id="ingredients" type="text" name="ingredients" value="<%=recipes.ingredients%>"></textarea>
+                    <textarea id="ingredients" type="text" name="ingredients"><%=recipes.ingredients%></textarea>
                     <label for="directions">Directions</label>
-                    <textarea id="directions" type="text" name="directions" value="<%=recipes.directions%>"></textarea> 
+                    <textarea id="directions" type="text" name="directions"><%=recipes.directions%></textarea> 
                 </fieldset>
                 <input type="submit" value="Edit Recipe" id="edit-input">
             </form>

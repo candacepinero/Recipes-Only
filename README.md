@@ -1,6 +1,6 @@
 # Recipes-Only
 
-Recipes Only is a full CRUD application that allows users to create recipes. When a user clicks on a recipe, they are redirected to a page displaying the ingredients and cooking instructions.
+Recipes Only is a full CRUD application that allows users to create public recipes. When a user clicks on a recipe, they are redirected to a page displaying the ingredients and cooking instructions.
 
 ## Technologies used
 
@@ -30,4 +30,4 @@ Recipes Only is a full CRUD application that allows users to create recipes. Whe
 
 ### Future Enhancements
 * Adding the ability for a user to create a personal account to store recipes and to keep them from being delete or edited
-* routes to other types of recipes like thai food recipes and others 
+* routes to other types of recipes like thai food recipes

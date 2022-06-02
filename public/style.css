@@ -277,11 +277,147 @@ li .edit-nav:hover {
 
 
 
+/* table */
+@media only screen and (max-width: 780px ) {
+    /* general displays */
+    ul {
+        background-color: #c1524d;
+        list-style-type: none;
+        margin: 0;
+        padding: 5px;
+        overflow: hidden;
+        position: fixed;
+        top: 10px;
+        width: 100%;
+    
+    }
+
+    li {
+        display: inline;
+        float: left;
+    }
+    
+    li .show-nav {
+        display: block;
+        color: white;
+        text-align: center;
+       
+    
+    }
+
+    li .show-nav:hover {
+        background-color: #8b5a6f;
+    }
+
+    /* edit form */
+    .edit-container {
+        width: 90vw;
+        height: 80vw;
+        margin: 50px auto;
+        margin-top: 200px;
+        display: flex;
+
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px #c1ccf3,
+            -1px -1px 10px #373a3a,
+            1px -1px 10px #d28244,
+            -1px 1px 10px #68e4c3;
+    }
+
+    .edit-container2 {
+        width: 700%;
+        background: #436f64;
+        border-radius: 0 10px 10px 0;
+        padding: 20px;
+        box-sizing: border-box;
+        overflow: auto;
+        
+    }
+
+
+    .recipe-info {
+        border: 1px solid #ecbd57;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 40px 0;
+        
+    }
+
+    /* create */
+    .new-container {
+        width: 90vw;
+        height: 80vw;
+        margin: 50px auto;
+        margin-top: 200px;
+
+        display: flex;
+
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px #e9ebf4,
+            -1px -1px 10px #323635,
+            1px -1px 10px #eba26b,
+            -1px 1px 10px #dbeee9;
+    }
+
+    .container2 {
+        width: 700%;
+        background: #436f64;
+        border-radius: 0 10px 10px 0;
+        padding: 20px;
+        box-sizing: border-box;
+        overflow: auto;
+        
+    }
+
+    .side-img {
+        width: 300px;
+        display: block;
+        background-image: url('https://i.imgur.com/g9uYZxT.png');
+        background-repeat: no-repeat;
+        border-radius: 10px 0 0 10px;
+       
+    }
+
+    /* show */
+    .show-h1 {
+       
+        width: 500px;
+        margin-left: 150px;
+       
+
+    }
+
+    .showimg-div {
+       margin-left: 200px;
+        
+    }
+
+    .show-img {
+        width: 400px;
+        
+    }
+
+    .show-text {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 400px;
+        margin-left: 200px;
+
+
+    }
+
+
+    h2 {
+        color: #654069;
+        margin-left: 60px;
+
+    }
+}
 
 
 
-
-
+/* large phone screen */
 @media only screen and (max-width: 600px) {
    ul {
         background-color: #c1524d;

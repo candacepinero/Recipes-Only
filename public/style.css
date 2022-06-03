@@ -104,11 +104,11 @@ li .show-nav:hover {
 }
 
 .show-h1 {
-    display: flex;
-    justify-content: center;
+   
     margin-top: 100px;
-    margin-left: 300px;
+    margin-left: 650px;
     color: #45ad99;
+  
 
 }
 
@@ -159,7 +159,7 @@ li .new-nav:hover {
 
 .new-container {
     width: 80vw;
-    height: 50vw;
+    height: 40vw;
     margin: 50px auto;
     margin-top: 100px;
 
@@ -240,7 +240,7 @@ li .edit-nav:hover {
 
 .edit-container {
     width: 80vw;
-    height: 50vw;
+    height: 40vw;
     margin: 50px auto;
     margin-top: 200px;
     display: flex;
@@ -416,6 +416,7 @@ li .edit-nav:hover {
 }
 
 
+
 /*  screen */
 @media only screen and (max-width: 600px) {
    ul {
@@ -454,7 +455,7 @@ li .edit-nav:hover {
     /* show */
     .show-h1 {
         width: 500px;
-        margin-left: -20px;
+        margin-left: 100px;
 
     }
 
@@ -467,7 +468,7 @@ li .edit-nav:hover {
 
     .show-img {
         width: 400px;
-        margin-left: -350px;
+        margin-left: -250px;
     }
 
     .show-text {
@@ -475,14 +476,14 @@ li .edit-nav:hover {
         justify-content: center;
         text-align: center;
         width: 400px;
-        margin-left: 40px;
+        margin-left: 50px;
 
 
     }
 
     h2 {
         color: #654069;
-        margin-left: -5px;
+        margin-left: 50px;
 
     }
 
@@ -559,7 +560,7 @@ li .edit-nav:hover {
 
 
     .edit-container2 {
-        width: 5000%;
+        /* width: 5000%; */
         background: #436f64;
         border-radius: 0 10px 10px 0;
         padding: 15px;
